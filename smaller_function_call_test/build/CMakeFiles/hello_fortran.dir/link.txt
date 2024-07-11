@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhello_fortran.a CMakeFiles/hello_fortran.dir/hello_world.f90.o
+/usr/bin/ranlib libhello_fortran.a

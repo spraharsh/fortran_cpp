@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/praharsh/fortran_cpp/build",
+  "command": "/usr/bin/gfortran  -I/home/praharsh/fortran_cpp -g -c /home/praharsh/fortran_cpp/fortran_program.f90 -o CMakeFiles/my_program.dir/fortran_program.f90.o",
+  "file": "/home/praharsh/fortran_cpp/fortran_program.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/build",
+  "command": "/usr/bin/c++  -I/home/praharsh/fortran_cpp -g -o CMakeFiles/my_program.dir/my_functions.cpp.o -c /home/praharsh/fortran_cpp/my_functions.cpp",
+  "file": "/home/praharsh/fortran_cpp/my_functions.cpp"
+}
+]

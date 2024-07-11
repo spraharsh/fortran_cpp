@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/f95  -I/home/praharsh/research/bv-libraries/pele/source -Jmodules -c /home/praharsh/fortran_cpp/rosenbrock/rosenbrock.f90 -o CMakeFiles/rosenbrock_executable.dir/rosenbrock.f90.o",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/rosenbrock.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/f95  -I/home/praharsh/research/bv-libraries/pele/source -Jmodules -c /home/praharsh/fortran_cpp/rosenbrock/rosenbrock_c_wrapper.f90 -o CMakeFiles/rosenbrock_executable.dir/rosenbrock_c_wrapper.f90.o",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/rosenbrock_c_wrapper.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/f95  -I/home/praharsh/research/bv-libraries/pele/source -Jmodules -c /home/praharsh/fortran_cpp/rosenbrock/test_rosenbrock.f90 -o CMakeFiles/rosenbrock_executable.dir/test_rosenbrock.f90.o",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/test_rosenbrock.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/f95    -c /home/praharsh/fortran_cpp/rosenbrock/rosenbrock.f90 -o CMakeFiles/rosenbrock_cpp_executable.dir/rosenbrock.f90.o",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/rosenbrock.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/f95    -c /home/praharsh/fortran_cpp/rosenbrock/rosenbrock_c_wrapper.f90 -o CMakeFiles/rosenbrock_cpp_executable.dir/rosenbrock_c_wrapper.f90.o",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/rosenbrock_c_wrapper.f90"
+},
+{
+  "directory": "/home/praharsh/fortran_cpp/rosenbrock/build",
+  "command": "/usr/bin/c++   -std=gnu++17 -o CMakeFiles/rosenbrock_cpp_executable.dir/test_rosenbrock_wrapper.cpp.o -c /home/praharsh/fortran_cpp/rosenbrock/test_rosenbrock_wrapper.cpp",
+  "file": "/home/praharsh/fortran_cpp/rosenbrock/test_rosenbrock_wrapper.cpp"
+}
+]

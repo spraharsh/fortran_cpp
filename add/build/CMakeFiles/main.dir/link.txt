@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/main.dir/main.c.o -o main  -Wl,-rpath,/home/praharsh/fortran_cpp/add/build libfortran_code.so 
