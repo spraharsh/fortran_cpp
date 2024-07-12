@@ -16,6 +16,12 @@ set(ROSENBROCK_SOURCE rosenbrock.f90)
 
 find_package(LAPACK REQUIRED)
 
+set(GMIN_INTERFACE_LIB_SOURCE
+    gmin_interface.cpp
+)
+set(GMIN_INTERFACE_LIB_HEADER
+    gmin_interface.hpp)
+
 # Add the source files
 set(FORTRAN_TARGET_SOURCES
     test_rosenbrock.f90
@@ -73,6 +79,15 @@ set(SUNDIALS_LIBRARIES
 
 message(STATUS "SUNDIALS_LIBRARIES: ${SUNDIALS_LIBRARIES}")
 
+# add gmin interface library
+add_library(gmin_interface_lib SHARED ${GMIN_INTERFACE_LIB_SOURCE})
+target_link_libraries(gmin_interface_lib PUBLIC ${PELE_BINARY_DIR}/libpele_lib.so)
+target_link_libraries(gmin_interface_lib PUBLIC ${SUNDIALS_LIBRARIES})
+target_include_directories(gmin_interface_lib PUBLIC ${PELE_DEP_INCLUDE_DIR})
+target_include_directories(gmin_interface_lib PUBLIC ${PELE_INCLUDE_DIR})
+target_include_directories(gmin_interface_lib PUBLIC ${LAPACKE_INCLUDE_DIR})
+target_link_libraries(gmin_interface_lib PUBLIC ${LAPACK_LIBRARIES})
+
 add_library(rosenbrock_lib SHARED ${ROSENBROCK_SOURCE})
 
 # Add the executable
@@ -96,12 +111,14 @@ target_link_libraries(rosenbrock_cpp_executable PUBLIC ${SUNDIALS_LIBRARIES})
 target_link_libraries(rosenbrock_cpp_executable PUBLIC ${PELE_BINARY_DIR}/libpele_lib.so)
 target_link_libraries(rosenbrock_cpp_executable PUBLIC ${SUNDIALS_LIBRARIES})
 target_link_libraries(rosenbrock_cpp_executable PUBLIC ${LAPACK_LIBRARIES})
+target_link_libraries(rosenbrock_cpp_executable PUBLIC gmin_interface_lib)
 
 # link all for the fortran cvode opt executable
 target_link_libraries(fortran_cvode_executable PUBLIC ${SUNDIALS_LIBRARIES})
 target_link_libraries(fortran_cvode_executable PUBLIC ${PELE_BINARY_DIR}/libpele_lib.so)
 target_link_libraries(fortran_cvode_executable PUBLIC ${SUNDIALS_LIBRARIES})
 target_link_libraries(fortran_cvode_executable PUBLIC ${LAPACK_LIBRARIES})
+target_link_libraries(fortran_cvode_executable PUBLIC gmin_interface_lib)
 
 # Set the Fortran standard
 set_target_properties(rosenbrock_executable PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_BINARY_DIR}/modules)

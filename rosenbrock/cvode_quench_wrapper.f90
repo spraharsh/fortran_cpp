@@ -57,7 +57,7 @@ contains
         type(c_ptr), value :: coordinates
         type(c_ptr), value :: c_ndof
         type(c_ptr), value :: energy
-        type(c_ptr), value :: gradient
+        type(c_ptr), value :: gradient ! Warning, removing value attribute causes a segfault
         type(c_ptr), value :: hessian
         
         logical(c_bool), value :: gradient_t

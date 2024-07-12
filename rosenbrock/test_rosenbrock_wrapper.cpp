@@ -1,5 +1,5 @@
+#include "gmin_interface.hpp"
 #include "pele/array.hpp"
-#include "pele/gmin_interface.hpp"
 #include <iostream>
 #include <memory>
 #include <vector>
