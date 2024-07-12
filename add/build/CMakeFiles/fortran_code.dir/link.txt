@@ -1,1 +1,0 @@
-/usr/bin/gfortran -fPIC -shared -Wl,-soname,libfortran_code.so -o libfortran_code.so CMakeFiles/fortran_code.dir/add.f90.o 

@@ -1,1 +1,0 @@
-/usr/bin/f95 -fPIC -g -shared -Wl,-soname,librosenbrock_lib.so -o librosenbrock_lib.so CMakeFiles/rosenbrock_lib.dir/rosenbrock.f90.o 

@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/hello_world.dir/hello_world.c.o -o hello_world   -L/usr/lib/gcc/x86_64-linux-gnu/11  libhello_fortran.a -lgfortran -lm -lquadmath -lm 

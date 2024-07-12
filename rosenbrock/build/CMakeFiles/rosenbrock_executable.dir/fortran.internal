@@ -1,5 +1,0 @@
-# The fortran modules provided by this target.
-provides
- rosenbrock_c_wrapper.mod
- rosenbrock_mod.mod
- test_rosenbrock.mod

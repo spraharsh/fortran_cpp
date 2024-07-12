@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/my_program.dir/fortran_program.f90.o CMakeFiles/my_program.dir/my_functions.cpp.o -o my_program   -L/usr/lib/gcc/x86_64-linux-gnu/11  -lstdc++ -lgfortran -lquadmath 

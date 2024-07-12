@@ -1,3 +1,0 @@
-/home/praharsh/fortran_cpp/build/CMakeFiles/my_program.dir
-/home/praharsh/fortran_cpp/build/CMakeFiles/edit_cache.dir
-/home/praharsh/fortran_cpp/build/CMakeFiles/rebuild_cache.dir

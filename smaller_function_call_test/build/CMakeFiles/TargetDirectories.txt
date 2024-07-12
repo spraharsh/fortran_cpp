@@ -1,4 +1,0 @@
-/home/praharsh/fortran_cpp/smaller_function_call_test/build/CMakeFiles/hello_fortran.dir
-/home/praharsh/fortran_cpp/smaller_function_call_test/build/CMakeFiles/hello_world.dir
-/home/praharsh/fortran_cpp/smaller_function_call_test/build/CMakeFiles/edit_cache.dir
-/home/praharsh/fortran_cpp/smaller_function_call_test/build/CMakeFiles/rebuild_cache.dir

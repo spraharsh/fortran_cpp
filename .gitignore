@@ -1,0 +1,10 @@
+*.mod
+
+
+**/build/
+
+**/.vscode/
+
+.cache/
+
+.clangd
