@@ -24,6 +24,7 @@ void CVODE_quench(int *ndof, double *coordinates, double *ereal,
             << " " << start_coords << std::endl;
   std::cout << "coordinates" << opt.get_x() << std::endl;
   start_coords.assign(opt.get_x());
+  *ereal = opt.get_f();
   *iter = opt.get_niter();
   *converged = opt.stop_criterion_satisfied();
 }
